@@ -10,8 +10,8 @@ constraints for the target platform.
 There appears to be a bug in toolchain resolution for bazel right now. There are two observed
 problems:
 
-1. `--platform` for a target other than the host fails to resolve the toolchain.
-2. On an ARM64 Windows host the output binary is x64 when no platform target is specified.
+1. `--platforms` for a target other than the host fails to resolve the toolchain.
+2. On an ARM64 Windows host the output binary is x64 when no platform constraints apply.
 
 The consequence of this is that the toolchain resolution is incapable of producing a binary for
 anything other than x64. Counterintuitively, the ARM64 host produces an x64 binary
