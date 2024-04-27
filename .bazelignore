@@ -1,0 +1,4 @@
+bazel-radiant-cpp
+bazel-bin
+bazel-out
+bazel-testlogs

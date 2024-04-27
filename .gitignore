@@ -1,0 +1,10 @@
+*.orig
+/compile_commands.json
+
+# vscode
+/.vscode/c_cpp_properties.json
+/.vscode/launch.json
+
+# bazel
+/bazel-*
+/external

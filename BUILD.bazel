@@ -1,0 +1,35 @@
+platform(
+    name = "windows_x86",
+    constraint_values = [
+        "@platforms//os:windows",
+        "@platforms//cpu:x86_32",
+    ],
+    visibility = [":__subpackages__"],
+)
+
+platform(
+    name = "windows_x64",
+    constraint_values = [
+        "@platforms//os:windows",
+        "@platforms//cpu:x86_64",
+    ],
+    visibility = [":__subpackages__"],
+)
+
+platform(
+    name = "windows_arm",
+    constraint_values = [
+        "@platforms//os:windows",
+        "@platforms//cpu:arm",
+    ],
+    visibility = [":__subpackages__"],
+)
+
+platform(
+    name = "windows_arm64",
+    constraint_values = [
+        "@platforms//os:windows",
+        "@platforms//cpu:arm64",
+    ],
+    visibility = [":__subpackages__"],
+)
